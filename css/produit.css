@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand%27');
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: url(../mariaa/background.jpg) no-repeat;
+    margin-top: -65px;
+}
+
+/* --------------------------------------------Nav */
+nav {
+
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    line-height: 70px;
+    padding: 5px 5px;
+    border-radius: 30px;
+}
+
+.menu a:hover {
+    background-color: #FFCE0D;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+
+}
+
+#toggle {
+    display: none;
+}
+
+.nav img {
+    width: 80px;
+    height: 80px;
+}
+
+img {
+    height: 100px;
+    margin-top: 35px;
+}
+
+.logo {
+    height: 80px;
+    margin-top: -1px;
+}
+
+.menu a.active {
+    background: #FFCE0D;
+}
+
+.menu a:hover {
+    background-color: #FFCE0D;
+}
+
+@media only screen and (max-width: 600px) {
+    .Header {
+        height: 10vh;
+        background-size: contain;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+        color: black;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        background-color: #FFCE0D
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid gray;
+        margin: 0;
+    }
+
+    #toggle:checked+.menu {
+        display: block;
+    }
+}
+
+/* ------------------------------------------------body---------------------------------------------------------- */
+h1 {
+    background-color: #F89B31;
+    padding: 10px;
+    width: 210px;
+    text-align: center;
+    margin: 70px auto;
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid #707070;
+    border-radius: 6px;
+    font-family: 'Franklin Gothic Medium';
+    position: relative;
+    top: 30px;
+    animation: swing 2s;
+}
+
+
+
+@-webkit-keyframes swing {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+.product1,
+.product2,
+.product3,
+.product4,
+.product5,
+.product6 {
+    background-color: white;
+    width: 210px;
+    margin: 10px auto;
+    border-radius: 20px;
+    height: 300px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px grey;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+p {
+    font-size: 10px;
+    font-family: cursive;
+    margin: 9px 5px;
+    padding-bottom: 12px;
+}
+
+span {
+    background-color: #F89B31;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.button p {
+    background-color: #F89B31;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bolder;
+    width: 200px;
+    text-align: center;
+    margin: 35px auto;
+    border: 1px solid #707070;
+    transition-duration: 1s;
+    transform: scale(1);
+}
+
+.button p:hover {
+    transform: scale(1.15);
+}
+
+.footer {
+    background-color: black;
+    width: 100%;
+    color: #F89B31;
+    display: flex;
+    font-family: 'Franklin Gothic Medium';
+    justify-content: space-around;
+
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.description {
+    width: 20%;
+}
+
+.media {
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.media a {
+    color: #f89B31;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .one,
+    .two,
+    .three {
+        display: flex;
+    }
+
+    .product1,
+    .product2,
+    .product3,
+    .product4,
+    .product5,
+    .product6 {
+        margin: 20px;
+        width: 37%;
+        height: 350px;
+    }
+
+    .one,
+    .two,
+    .three {
+        justify-content: center;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    h1 {
+        width: 383px;
+    }
+
+}
+
+/* @media only screen and (min-width: 900px) {
+
+    .product1,
+    .product2,
+    .product3,
+    .product4,
+    .product5,
+    .product6 {
+        margin: 20px;
+        width: 37%;
+        height: 400px;
+    } */
+
+/* -----------------------------------------------footer----------------------------------------------------- */
+
+/* @media only screen and (min-width:900px) {
+        .footer {
+            font-size: .6em;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+        }
+
+    }
+
+    @media only screen and (max-width:590px) {
+        .footer {
+            display: block;
+        }
+
+
+    } */
+
+footer {
+    text-align: center;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    padding: 10px 0;
+    margin-top: -15px;
+
+}
+
+footer img {
+    text-align: center;
+    height: 100px;
+    padding: 30px 0px;
+}
+
+.contacts ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    color: #F8D64E;
+    margin-right: 40px;
+
+}
+
+.contacts ul li i {
+    margin-right: 10px;
+    color: #F8D64E;
+}
+
+.media {
+    width: 15%;
+    margin: auto;
+    padding: 30px 0px;
+    color: #F8D64E;
+
+}
+
+.media ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    color: #F8D64E;
+
+}
+
+.media ul li a {
+    color: #F8D64E;
+    margin-left: 10px;
+}
+
+footer p {
+    color: #F8D64E;
+}
+
+
+@media (max-width: 990px) {
+
+    .contacts ul {
+        flex-direction: column;
+
+    }
+
+    .contacts ul li {
+        line-height: 30px;
+    }
+}
